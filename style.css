@@ -1,0 +1,74 @@
+.question-name{
+  background-size: cover;
+}
+
+.choice-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.choice-grid div{
+  width: 32.5%;
+  padding: 10px;
+  box-sizing: border-box;
+  /*width: calc(32.5% - 20px); Questo ci permette di non usare il box-sizing*/
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.choice-grid div img{
+  width: 100%;
+}
+
+.choice-grid .clicked{
+  background-color: #cfe3ff;
+}
+
+.choice-grid .hidden{
+  opacity: 0.6;
+}
+
+#result{
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+#result p{
+  margin: 18px 0px;
+}
+
+#result button{
+  font-size: 0.9em;
+  width: 100%;
+  height: 50px;
+  background-color: #cecece;
+}
+
+#result button:hover{
+  background-color: #e0e0e0;
+}
+
+.invisible{
+  display:none;
+}
+
+@media(max-width: 700px){
+  article{
+    width: 95%;
+  }
+  header div span{
+    display: none;
+  }  
+  .question-name h1, h1{
+  font-size: 2em;
+  }
+}
+
+@media(max-width: 500px){
+  .choice-grid div{
+    width: 49%;
+  }
+}
